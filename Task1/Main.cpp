@@ -25,7 +25,7 @@ int main()
 	}
 	while (N > 0)//Построение числа
 	{
-		TransformedN = (N % p < 10) ? to_string(N % p) + TransformedN : char('A' + N % p - 10) + TransformedN;//åñëè ÷èñëîâîå çíà÷åíèå öèôðû < 9,òî âîçâðàùàåòññÿ çíàê îò '0' äî '9', èíà÷å îò 'A' äî 'F'
+		TransformedN = (N % p < 10) ? to_string(N % p) + TransformedN : char('A' + N % p - 10) + TransformedN;//строим числа в зависимости от их системы счисления
 		N /= p;
 	}
 	cout << TransformedN << "A new code wow";
